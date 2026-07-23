@@ -12,9 +12,9 @@
 <p align="center">
   <a href="https://hummingbirdlabs.dev">Website</a>
   ·
-  <a href="https://github.com/hummingbird-labs">Projects</a>
+  <a href="https://github.com/hummingbird-labs-dev">Projects</a>
   ·
-  <a href="https://github.com/hummingbird-labs?tab=repositories">Repositories</a>
+  <a href="https://github.com/hummingbird-labs-dev?tab=repositories">Repositories</a>
 </p>
 
 ---
@@ -29,15 +29,15 @@ This is where experiments become repeatable systems: infrastructure as code, sel
 
 ## What we're building
 
-| Area | Focus |
-| --- | --- |
-| **Platform engineering** | Internal platforms, golden paths, developer experience, and reusable automation |
-| **Infrastructure as code** | Declarative, version-controlled infrastructure with reproducible environments |
-| **Self-hosting** | Privacy-respecting services operated and maintained at home, including Caddy web services |
-| **Cloud-native systems** | Containers, orchestration, service discovery, and resilient application delivery |
-| **Observability** | Metrics, logs, traces, dashboards, alerting, and operational visibility |
-| **Security** | Identity, secrets management, network segmentation, backups, and least privilege |
-| **Delivery automation** | GitHub Actions validation, release workflows, and GitOps practices |
+| Area                       | Focus                                                                                     |
+| -------------------------- | ----------------------------------------------------------------------------------------- |
+| **Platform engineering**   | Internal platforms, golden paths, developer experience, and reusable automation           |
+| **Infrastructure as code** | Declarative, version-controlled infrastructure with reproducible environments             |
+| **Self-hosting**           | Privacy-respecting services operated and maintained at home, including Caddy web services |
+| **Cloud-native systems**   | Containers, orchestration, service discovery, and resilient application delivery          |
+| **Observability**          | Metrics, logs, traces, dashboards, alerting, and operational visibility                   |
+| **Security**               | Identity, secrets management, network segmentation, backups, and least privilege          |
+| **Delivery automation**    | GitHub Actions validation, release workflows, and GitOps practices                        |
 
 ## Principles
 
@@ -50,7 +50,7 @@ This is where experiments become repeatable systems: infrastructure as code, sel
 
 ## Platform architecture
 
-Hummingbird Labs is organized as a layered platform. Each repository has a clear ownership boundary, while [`architecture`](https://github.com/hummingbird-labs/architecture) documents how the complete system fits together.
+Hummingbird Labs is organized as a layered platform. Each repository has a clear ownership boundary, while [`architecture`](https://github.com/hummingbird-labs-dev/architecture) documents how the complete system fits together.
 
 ```text
 hummingbirdctl -> platform-api -> GitHub Actions -> GitOps -> Kubernetes
@@ -63,17 +63,17 @@ The future control plane will manage **version-controlled desired state**, rathe
 
 ## Repositories
 
-| Repository | Responsibility | Technologies |
-| --- | --- | --- |
-| [`architecture`](https://github.com/hummingbird-labs/architecture) | Canonical, high-level documentation for the lab: system diagrams, architecture decision records, service catalog, and operational model. | MkDocs · Mermaid · ADRs |
-| [`infrastructure`](https://github.com/hummingbird-labs/infrastructure) | Provisions foundational infrastructure, networking, DNS, and shared resources. | Terraform |
-| [`configuration`](https://github.com/hummingbird-labs/configuration) | Configures and maintains hosts with reusable, idempotent automation. | Ansible |
-| [`platform`](https://github.com/hummingbird-labs/platform) | Defines the Kubernetes platform, GitOps desired state, Caddy, shared services, and workload delivery. | Kubernetes · Helm · GitOps |
-| [`observability`](https://github.com/hummingbird-labs/observability) | Operates the telemetry stack with dashboards, alerts, recording rules, and runbooks. | Prometheus · Grafana |
-| [`platform-api`](https://github.com/hummingbird-labs/platform-api) | Provides the versioned control-plane API for lab inventory, health, and approved platform changes. | OpenAPI · API service |
-| [`hummingbirdctl`](https://github.com/hummingbird-labs/hummingbirdctl) | Provides a focused command-line interface for interacting with the platform API. | CLI |
-| [`website`](https://github.com/hummingbird-labs/website) | Publishes the public Hummingbird Labs site and platform portfolio. | Static site |
-| [`.github`](https://github.com/hummingbird-labs/.github) | Defines the organization profile, contribution experience, and shared GitHub configuration. | GitHub |
+| Repository                                                                 | Responsibility                                                                                                                           | Technologies               |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| [`architecture`](https://github.com/hummingbird-labs-dev/architecture)     | Canonical, high-level documentation for the lab: system diagrams, architecture decision records, service catalog, and operational model. | MkDocs · Mermaid · ADRs    |
+| [`infrastructure`](https://github.com/hummingbird-labs-dev/infrastructure) | Provisions foundational infrastructure, networking, DNS, and shared resources.                                                           | Terraform                  |
+| [`configuration`](https://github.com/hummingbird-labs-dev/configuration)   | Configures and maintains hosts with reusable, idempotent automation.                                                                     | Ansible                    |
+| [`platform`](https://github.com/hummingbird-labs-dev/platform)             | Defines the Kubernetes platform, GitOps desired state, Caddy, shared services, and workload delivery.                                    | Kubernetes · Helm · GitOps |
+| [`observability`](https://github.com/hummingbird-labs-dev/observability)   | Operates the telemetry stack with dashboards, alerts, recording rules, and runbooks.                                                     | Prometheus · Grafana       |
+| [`platform-api`](https://github.com/hummingbird-labs-dev/platform-api)     | Provides the versioned control-plane API for lab inventory, health, and approved platform changes.                                       | OpenAPI · API service      |
+| [`hummingbirdctl`](https://github.com/hummingbird-labs-dev/hummingbirdctl) | Provides a focused command-line interface for interacting with the platform API.                                                         | CLI                        |
+| [`website`](https://github.com/hummingbird-labs-dev/website)               | Publishes the public Hummingbird Labs site and platform portfolio.                                                                       | Static site                |
+| [`.github`](https://github.com/hummingbird-labs-dev/.github)               | Defines the organization profile, contribution experience, and shared GitHub configuration.                                              | GitHub                     |
 
 Implementation repositories link to the relevant pages in `architecture` rather than duplicating system design. Local READMEs explain how to use and contribute to a repository; `architecture` remains the single source of truth for the platform as a whole.
 

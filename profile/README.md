@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="https://hummingbirdlabs.dev/assets/hummingbird-mark.svg" width="110" alt="Hummingbird Labs logo" />
+  <img src="./logo.png" width="350" alt="Hummingbird Labs logo" />
 </p>
-
-<h1 align="center">Hummingbird Labs</h1>
 
 <p align="center">
   <strong>A self-hosted platform engineering lab.</strong><br />

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.png" width="350" alt="Hummingbird Labs logo" />
+  <img src="https://raw.githubusercontent.com/hummingbird-labs-dev/.github/main/profile/logo.png" width="350" alt="Hummingbird Labs logo" />
 </p>
 
 <p align="center">

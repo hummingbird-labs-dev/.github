@@ -31,7 +31,7 @@ This is where experiments become repeatable systems: infrastructure as code, sel
 | -------------------------- | ----------------------------------------------------------------------------------------- |
 | **Platform engineering**   | Internal platforms, golden paths, developer experience, and reusable automation           |
 | **Infrastructure as code** | Declarative, version-controlled infrastructure with reproducible environments             |
-| **Self-hosting**           | Privacy-respecting services operated and maintained at home, including Caddy web services |
+| **Self-hosting**           | Privacy-respecting services operated and maintained at home, including edge web services  |
 | **Cloud-native systems**   | Containers, orchestration, service discovery, and resilient application delivery          |
 | **Observability**          | Metrics, logs, traces, dashboards, alerting, and operational visibility                   |
 | **Security**               | Identity, secrets management, network segmentation, backups, and least privilege          |
@@ -66,7 +66,8 @@ The future control plane will manage **version-controlled desired state**, rathe
 | [`architecture`](https://github.com/hummingbird-labs-dev/architecture)     | Canonical, high-level documentation for the lab: system diagrams, architecture decision records, service catalog, and operational model. | MkDocs · Mermaid · ADRs    |
 | [`infrastructure`](https://github.com/hummingbird-labs-dev/infrastructure) | Provisions foundational infrastructure, networking, DNS, and shared resources.                                                           | Terraform                  |
 | [`configuration`](https://github.com/hummingbird-labs-dev/configuration)   | Configures and maintains hosts with reusable, idempotent automation.                                                                     | Ansible                    |
-| [`platform`](https://github.com/hummingbird-labs-dev/platform)             | Defines the Kubernetes platform, GitOps desired state, Caddy, shared services, and workload delivery.                                    | Kubernetes · Helm · GitOps |
+| [`platform`](https://github.com/hummingbird-labs-dev/platform)             | Defines the Kubernetes platform, GitOps desired state, shared services, and workload delivery.                                           | Kubernetes · Helm · GitOps |
+| [`edge`](https://github.com/hummingbird-labs-dev/edge)                     | Operates the internet-facing edge: Caddy configuration, TLS, DNS integration, and reverse-proxy routing to internal services.           | Caddy · TLS · DNS          |
 | [`observability`](https://github.com/hummingbird-labs-dev/observability)   | Operates the telemetry stack with dashboards, alerts, recording rules, and runbooks.                                                     | Prometheus · Grafana       |
 | [`platform-api`](https://github.com/hummingbird-labs-dev/platform-api)     | Provides the versioned control-plane API for lab inventory, health, and approved platform changes.                                       | OpenAPI · API service      |
 | [`hummingbirdctl`](https://github.com/hummingbird-labs-dev/hummingbirdctl) | Provides a focused command-line interface for interacting with the platform API.                                                         | CLI                        |
